@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<link rel="stylesheet" href="dangki.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <div class="navbar">
+        <div class="name">
+            <h1>HalloweenShop</h1>
+        </div>
+        <div class="right">
+            <div class="search">
+                <input type="text" placeholder="Tìm kiếm...">
+                
+            </div>
+            <div class="icon">
+                <header>
+                    <div class="shopping">
+                           
+                            <i class="fa-solid fa-cart-shopping"></i>
+                       
+                        <span class="quantity">0</span>
+                    </div>
+                </header>
+
+
+
+                <a href="dangki.html">
+                    <i class="fa-solid fa-user" id="users"></i>
+                </a>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                </a>
+            </div>
+        </div>
+</div>  
+       <div class="container">
+            <form class="formm" action="" id="register-form">
+               <h3 class="form_title">Đăng kí</h3>
+               <div class="thongtin">
+                <label class="form_label" for="nameInput">Họ & tên</label> 
+                <input
+                name="name"
+                class="form_input"
+                type="text"
+                id="nameInput" placeholder="Nhập tên đăng kí"
+                />
+            </div>
+            <div class="thongtin">
+                <label class="form_label" for="emailInput" >Email</label> 
+                <input
+                name="username"
+                class="form_input"
+                type="email"
+                id="emailInput" placeholder=" Nhập Email "
+                />
+            </div>
+            <div class="thongtin">
+                <label class="form_label" for="passwordInput">Password</label> 
+                <input
+                name="password"
+                class="form_input"
+                type="password" 
+                id="passwordInput"
+                placeholder="Nhập mật khẩu " >
+            </div>
+            <div>
+                <input type="submit" class="form_submit" value="Đăng kí">
+                <a href="dangnhap.html" class="form_href">(*) Bạn đã có tài khoản</a>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="dangki.js"></script>
+</body>
+</html>

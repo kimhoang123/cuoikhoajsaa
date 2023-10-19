@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #eee !important;
+}
+.navbar {
+  display: flex;
+  padding: 14px 10px;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  z-index: 99;
+  background: rgb(0, 0, 0);
+  color: #eee;
+}
+.name {
+  color: rgb(255, 255, 255);
+  padding: 0px 15px;
+  background: #000000;
+}
+.right {
+  display: flex;
+  margin-top: 5px;
+}
+.right input {
+  padding: 4px 10px;
+}
+.navbar .right a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .right i {
+  padding: 0 16px;
+  cursor: pointer;
+  font-size: 19px;
+}
+.headline {
+  width: 100%;
+  height: 55vh;
+  color: #eee;
+  min-height: 350px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("https://www.homelane.com/blog/wp-content/uploads/2020/11/shutterstock_1423157978.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  padding: 0em 7.5em;
+}
+.headline {
+  font-size: larger;
+}
+.product {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.demo {
+  padding: 45px 0;
+}
+.product-grid {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+.product-grid .image {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+.product-grid .image a {
+  display: block;
+}
+.product-grid .image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+.product-image .pic-1 {
+  opacity: 1;
+  transition: all 0.5s;
+}
+.product-grid:hover .image .pic-1 {
+  opacity: 0;
+}
+.image .pic-2 {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+.product-grid:hover .image .pic-2 {
+  opacity: 1;
+}
+.product-grid .social {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 40px;
+  right: 18px;
+  z-index: 1;
+}
+.product-grid .social li {
+  margin: 0 0 10px;
+  display: block;
+  transform: translateX(100px);
+  transition: all 0.5s;
+}
+
+.product-grid .social li button {
+  background-color: transparent;
+  border: none;
+}
+.product-grid:hover .social li {
+  transform: translateX(0);
+}
+.product-grid:hover .social li:nth-child(2) {
+  transition-delay: 0.15s;
+}
+.product-grid:hover .social li:nth-child(3) {
+  transition-delay: 0.25s;
+}
+.product-grid .social li a {
+  color: #757575;
+  background-color: #fff;
+  font-size: 17px;
+  line-height: 45px;
+  text-align: center;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+.product-grid .social li a:hover {
+  color: #fff;
+  background-color: #818587;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.product-grid .social li a:after,
+.product-grid2 .social li a:before {
+  content: attr(data-tip);
+  color: #fff;
+  line-height: 22px;
+  border-radius: 3px;
+  padding: 0 5px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  top: -30px;
+}
+.product-grid .social li a:after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 0;
+  transform: translateX(-50%) rotate(45deg);
+  top: -22px;
+  z-index: -1;
+}
+.product-grid .social li a:hover:after,
+.product-grid2 .social li a:hover:before {
+  opacity: 1;
+}
+.product-grid2 .add-to-cart {
+  color: #fff;
+  background-color: #404040;
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  transition: all 0.3s;
+}
+.product-grid:hover .add-to-cart {
+  bottom: 0;
+}
+.product-grid .product-new-label {
+  background-color: #3498db;
+  color: #fff;
+  font-size: 17px;
+  padding: 5px 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s;
+}
+.product-grid:hover .product-new-label {
+  opacity: 0;
+}
+.product-grid2 .product-content {
+  padding: 20px 10px;
+  text-align: center;
+}
+.product-grid .title {
+  font-size: 17px;
+  margin: 0 0 7px;
+  text-align: center;
+}
+.product-grid .title a {
+  color: #303030;
+  text-decoration: none;
+}
+.product-grid.price {
+  color: #303030;
+  font-size: 15px;
+  text-align: center;
+}
+.sanpham {
+  width: 90%;
+  padding: 7px 0px;
+  text-align: center;
+}
+.products {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-row-gap: 2em;
+  margin: 30px;
+  margin-left: 60px;
+}
+.image {
+  border-radius: 3%;
+}
+.icon {
+  display: flex;
+}
+header .shopping {
+  position: relative;
+  text-align: right;
+}
+header .shopping img {
+  width: 40px;
+}
+header .shopping span {
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  color: #fff;
+  position: absolute;
+  top: -13px;
+  right: -2px;
+  padding: 1px 8px;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 50px;
+}
+.list .item {
+  text-align: center;
+  background-color: #dce0e1;
+  padding: 20px;
+  box-shadow: 0 50px 50px #757676;
+  letter-spacing: 1px;
+}
+.list .item img {
+  width: 90%;
+  height: 430px;
+  object-fit: cover;
+}
+.list .item .title {
+  font-weight: 600;
+}
+.list .item .price {
+  margin: 10px;
+}
+.list .item button {
+  background-color: #1c1f25;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+}
+.card {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 500px;
+  background-color: #282828;
+  height: 100vh;
+  transition: 0.5s;
+}
+.active .card {
+  left: calc(100% - 500px);
+}
+.active .container {
+  transform: translateX(-200px);
+}
+.card h1 {
+  color: #ffffff;
+  font-weight: 100;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.card .checkOut {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card .checkOut div {
+  background-color: #4d4d4d;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+.card .checkOut div:nth-child(2) {
+  background-color: #4d4d4d;
+  color: #fff;
+}
+.listCard li {
+  display: grid;
+  grid-template-columns: 100px repeat(3, 1fr);
+  color: #fff;
+  row-gap: 10px;
+}
+.listCard li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listCard li img {
+  width: 90%;
+}
+.listCard li button {
+  background-color: #fff5;
+  border: none;
+}
+.listCard .count {
+  margin: 0 10px;
+}
+#post {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: xx-large;
+}
+.listCard {
+  width: 95%;
+}
+.item {
+  display: flex;
+  color: #fff;
+  row-gap: 10px;
+}
+.content {
+  margin-left: 25px;
+  font-size: large;
+}
+.quantity {
+  text-align: center;
+  justify-content: center;
+}
+.quantity input {
+  width: 10%;
+}
+.minus {
+  width: 8%;
+}
+.plus {
+  width: 8%;
+}
+.remove {
+  color: rgb(255, 255, 255);
+  background-color: red;
+  width: 17%;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="post.css" />
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body>
+    <div class="navbar">
+      <div class="name">
+        <h1>HalloweenShop</h1>
+      </div>
+      <div class="right">
+        <div class="search">
+          <input type="text" placeholder="Tìm kiếm..." />
+        </div>
+        <div class="icon">
+          <header>
+            <div class="shopping">
+              <i class="fa-solid fa-cart-shopping"></i>
+
+              <span class="quantity">0</span>
+            </div>
+          </header>
+
+          <a href="dangki.html">
+            <i class="fa-solid fa-user" id="users"></i>
+          </a>
+          <a href="index.html">
+            <i class="fas fa-home"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <body>
+    <div class="all">
+      <form id="post-form">
+        <h1 class="namepost">Trang đăng bài</h1>
+        <label>
+          Tên sản phẩm:
+          <input type="text" name="name" required />
+        </label>
+       
+        <label>
+          Giá:
+          <input name="price" required></input>
+        </label>
+        <label>
+          Ảnh:
+          <input type="file" name="image" multiple required id="file-input"/>
+        </label>
+      
+        <button class="thembaidang" type="submit">Thêm bài đăng</button>
+      </form>
+    </div>
+
+      <div class="products" id="products">
+        <!-- Danh sách bài đăng sẽ được hiển thị ở đây cùng với các nút cập nhật và xoá -->
+      </div>
+      <script src="post.js"></script>
+    </body>
+  </body>
+</html>

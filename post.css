@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+     padding: 14px 10px;
+     position: sticky;
+     top: 0;
+     justify-content: space-between ;
+     z-index: 99;
+     background: rgb(0, 0, 0);
+     color: #eee;
+     
+ }
+ .name{
+     color: rgb(255, 255, 255);
+     padding: 0px 15px;
+     background: #000000;
+     
+ }
+ .right{
+     display: flex;
+     margin-top: 5px;
+ }
+ .right input{
+     padding: 4px 10px;
+ }
+ .navbar .right a{
+     text-decoration: none;
+     color: white;
+ }
+ .navbar .right i{
+     padding: 0 16px;
+     cursor: pointer;
+     font-size: 19px;
+ }
+.icon{
+    display: flex;
+  }
+  header .shopping{
+    position: relative;
+    text-align: right;
+  }
+  header .shopping img{
+    width: 40px;
+  }
+  header .shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    color: #fff;
+    position: absolute;
+    top: -13px;
+    right: -2px;
+    padding: 1px 8px;
+  }
+
+.all{
+    display: flex;
+    justify-content: center;
+}
+#post-form{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 5px 10px 16px  rgba(0,0,0,0.2);
+    margin-top: 40px;
+   
+}
+.thembaidang{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 6px;
+    width: 100%;
+    border: 0;
+}
+.price{
+    padding: auto;
+}
+.namepost{
+    text-align: center;
+}
+#posts{
+    margin: 30px;
+    margin-left: 60px;
+    margin-top: 80px;
+   
+    
+}
+#posts img{
+    max-width: 100%;
+    max-height: 100%;
+}
+#posts span {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #656464;
+}
+.posts div{
+    justify-content: space-between;
+    flex-direction: column;
+}

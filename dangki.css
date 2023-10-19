@@ -1,0 +1,111 @@
+body { background-image: url("https://th.bing.com/th/id/R.2d97b87229e7aa305dd18cf2d3e8b3f9?rik=sIdC910Dka9GBA&riu=http%3a%2f%2fimages4.fanpop.com%2fimage%2fphotos%2f15300000%2fHalloween-halloween-15357627-1920-1200.jpg&ehk=%2bpmcp7z6PrI1zXyfxb%2fSZRh%2fIoiNsPAUxoSAQTczELE%3d&risl=&pid=ImgRaw&r=0");}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background: rgb(0, 0, 0);
+    display: flex;
+    color: white;
+    padding: 14px 10px;
+    position: sticky;
+    top: 0;
+    justify-content: space-between ;
+    z-index: 99;
+    
+}
+.name{
+    color: rgb(255, 255, 255);
+    padding: 0px 15px;
+    background: #000000;
+    
+}
+.right{
+    display: flex;
+    margin-top: 5px;
+}
+.right input{
+    padding: 4px 10px;
+}
+.navbar .right a{
+    text-decoration: none;
+    color: white;
+}
+.navbar .right i{
+    padding: 0 16px;
+    cursor: pointer;
+    font-size: 19px;
+}
+.login{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 5px 10px 16px  rgba(0,0,0,0.2);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 99;
+    background-color: #fff;
+}
+.formm{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 5px 10px 16px  rgba(0,0,0,0.2);
+}
+.form_title{
+    text-align: center;
+    text-transform: uppercase;
+}
+.form_label{
+    font-weight: bold;
+    display: block;
+}
+.form_input{
+    width: 100%;
+    border: 0;
+    border-bottom: 1.5px solid rgb(0, 0, 0);
+    margin: 5px 0px;
+}
+.form_submit{
+    background-color: rgb(255, 119, 41);
+    color: #fff;
+    padding: 6px;
+    width: 100%;
+    border: 0;
+}
+
+.form_href{
+    text-decoration: none;
+    color: black;
+}
+.icon{
+    display: flex;
+  }
+  header .shopping{
+    position: relative;
+    text-align: right;
+  }
+  header .shopping img{
+    width: 40px;
+  }
+  header .shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    color: #fff;
+    position: absolute;
+    top: -13px;
+    right: -2px;
+    padding: 1px 8px;
+  }
